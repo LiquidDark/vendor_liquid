@@ -1,6 +1,9 @@
 # Written for UBER toolchains (UBERTC)
 # Requires a Linux Host
 
+# Jack server heap size
+export ANDROID_JACK_VM_ARGS += "-Xmx4g"
+
 UNAME := $(shell uname -s)
 ifeq (Linux,$(UNAME))
   HOST_OS := linux
