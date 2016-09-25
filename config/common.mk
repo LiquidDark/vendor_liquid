@@ -111,7 +111,11 @@ ifneq ($(TARGET_DISABLE_CMSDK), true)
 include $(CONFIG)/cmsdk_common.mk
 endif
 
-# Required Liquid packages
+# Viper4Android
+PRODUCT_COPY_FILES += \
+    vendor/liquid/prebuilt/addon.d/viper.zip:system/addon.d/viper.zip
+
+# Include packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
     CMAudioService \
