@@ -61,6 +61,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/nougat/prebuilt/addon.d/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip
 
+# Viper4Android
+PRODUCT_COPY_FILES += \
+    vendor/nougat/prebuilt/etc/v4a.zip:system/addon.d/v4a.zip
+
 # Include packages
 PRODUCT_PACKAGES += \
     AOSPLinks \
