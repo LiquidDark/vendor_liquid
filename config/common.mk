@@ -1,11 +1,11 @@
-# XenonHD product
-PRODUCT_BRAND ?= xenonhd
-PRODUCT_NAME ?= xenonhd
+# Liquidproduct
+PRODUCT_BRAND ?= liquid
+PRODUCT_NAME ?= liquid
 
 # Definitions
-CONFIG := vendor/xenonhd/config
-OVERLAY := vendor/xenonhd/overlay
-PREBUILT := vendor/xenonhd/prebuilt/common
+CONFIG := vendor/liquid/config
+OVERLAY := vendor/liquid/overlay
+PREBUILT := vendor/liquid/prebuilt/common
 
 # Copy prebuilt files
 PRODUCT_COPY_FILES +=  \
@@ -72,9 +72,9 @@ PRODUCT_COPY_FILES += \
     $(PREBUILT)/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
-# XenonHD-specific init file
+# Liquid-specific init file
 PRODUCT_COPY_FILES += \
-    $(PREBUILT)/etc/init.local.rc:root/init.xenonhd.rc
+    $(PREBUILT)/etc/init.local.rc:root/init.liquid.rc
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
@@ -88,15 +88,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
-# This is XenonHD!
+# This is Liquid!
 PRODUCT_COPY_FILES += \
     $(CONFIG)/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
 # Include OTA config
 include $(CONFIG)/ota.mk
 
-# Include XenonHD audio files
-include $(CONFIG)/xenonhd_audio.mk
+# Include Liquid audio files
+include $(CONFIG)/liquid_audio.mk
 
 # Theme engine
 include $(CONFIG)/themes_common.mk
@@ -111,7 +111,7 @@ ifneq ($(TARGET_DISABLE_CMSDK), true)
 include $(CONFIG)/cmsdk_common.mk
 endif
 
-# Required XenonHD packages
+# Required Liquid packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
     CMAudioService \
@@ -120,7 +120,7 @@ PRODUCT_PACKAGES += \
     Profiles \
     WeatherManagerService
 
-# Optional XenonHD packages
+# Optional Liquid packages
 PRODUCT_PACKAGES += \
     libemoji \
     LiveWallpapersPicker \
@@ -132,7 +132,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-# Custom XenonHD packages
+# Custom Liquid packages
 PRODUCT_PACKAGES += \
     Adaway \
     Amaze \
@@ -247,7 +247,7 @@ endif
 DEVICE_PACKAGE_OVERLAYS += $(OVERLAY)/common
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
-  vendor/xenonhd/build/target/product/security/lineage
+  vendor/liquid/build/target/product/security/lineage
 
 -include vendor/cm-priv/keys/keys.mk
 
