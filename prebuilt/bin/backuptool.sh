@@ -5,38 +5,10 @@
 
 export C=/tmp/backupdir
 export S=/system
-export V=7.0
+export V=7
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 cp -f /tmp/install/bin/backuptool.functions /tmp
-
-# Backup hosts
-preserve_hosts() {
-  cp -a /system/etc/hosts /tmp/hosts
-  chmod 644 /tmp/hosts
-}
-
-# Restore hosts
-restore_hosts() {
-  cp -a /tmp/hosts /system/etc/hosts
-  rm -rf /tmp/hosts
-}
-
-# Backup fonts
-preserve_fonts() {
-  mkdir -p /tmp/fonts
-  cp -a /system/fonts/Roboto* /tmp/fonts/
-  chmod 644 /tmp/fonts/*.ttf
-}
-
-# Restore fonts
-restore_fonts() {
-  if [ -d /system/fonts/ ]; then
-    cp -a /tmp/fonts/* /system/fonts/
-    rm -rf /tmp/fonts
-    chmod 644 /tmp/fonts/*.ttf
-  fi
-}
 
 # Preserve /system/addon.d in /tmp/addon.d
 preserve_addon_d() {
@@ -63,7 +35,7 @@ if [ ! -r /system/build.prop ]; then
 fi
 if ( ! grep -q "^ro.build.version.release=$V.*" /system/build.prop ); then
   echo "Not backing up files from incompatible version: $V"
-  return 0
+  exit 127
 fi
 }
 
@@ -81,8 +53,6 @@ case "$1" in
     mkdir -p $C
     check_prereq
     preserve_addon_d
-    preserve_fonts
-    preserve_hosts
     run_stage pre-backup
     run_stage backup
     run_stage post-backup
@@ -93,8 +63,6 @@ case "$1" in
     run_stage restore
     run_stage post-restore
     restore_addon_d
-    restore_fonts
-    restore_hosts
     rm -rf $C
     sync
   ;;
