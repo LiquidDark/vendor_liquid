@@ -110,4 +110,10 @@ ifneq (,$(GCC_OPTIMIZATION_LEVELS))
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.uber.flags=$(GCC_OPTIMIZATION_LEVELS)
 endif
+
+# UBER Clang version
+UBC_VERSION := uber-3.8
+
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.uber.clang=$(UBC_VERSION)
 endif
