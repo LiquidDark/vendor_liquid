@@ -91,23 +91,21 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.uber.kernel=$(AARCH64_KERNEL_PROP)
 endif
 
-# UBERTC OPTIMIZATIONS 
+# UBERTC OPTIMIZATIONS
+ifeq (true,$(O3_OPTS))
+  OPT1 := (clang_O3)
+endif
 ifeq (true,$(STRICT_ALIASING))
-  OPT1 := (strict)
+  OPT2 := (strict)
+endif
+ifeq (true,$(POLLY_OPTS))
+  OPT3 := (polly)
 endif
 ifeq (true,$(GRAPHITE_OPTS))
-  OPT2 := (graphite)
+  OPT4 := (graphite)
 endif
-ifeq (true,$(KRAIT_TUNINGS))
-  OPT3 := ($(TARGET_CPU_VARIANT))
-endif
-ifeq (true,$(ENABLE_GCCONLY))
-  OPT4 := (gcconly)
-endif
-ifeq (true,$(CLANG_O3))
-  OPT5 := (clang_O3)
-endif
-GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)
+
+GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)
 ifneq (,$(GCC_OPTIMIZATION_LEVELS))
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.uber.flags=$(GCC_OPTIMIZATION_LEVELS)
