@@ -32,7 +32,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.secure=0
 
-# APN
+# APN config
 PRODUCT_COPY_FILES += \
     vendor/nougat/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
@@ -62,7 +62,8 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk config
 PRODUCT_COPY_FILES += \
-    vendor/nougat/prebuilt/etc/init.nougat.rc:root/init.nougat.rc
+    vendor/nougat/prebuilt/etc/init.nougat.rc:root/init.nougat.rc \
+    vendor/nougat/prebuilt/etc/init.special.sh:root/init.special.sh
 
 # SuperSU
 PRODUCT_COPY_FILES += \
