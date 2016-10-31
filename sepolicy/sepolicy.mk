@@ -3,4 +3,4 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/nougat/sepolicy
+    vendor/liquid/sepolicy
