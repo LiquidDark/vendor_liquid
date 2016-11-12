@@ -9,25 +9,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # UBER property overides
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sys.fw.bg_apps_limit=20 \
     debug.performance.tuning=1 \
     wifi.supplicant_scan_interval=180 \
     windowsmgr.max_events_per_sec=150 \
     persist.service.lgospd.enable=0 \
     persist.service.pcsync.enable=0 \
+    persist.sys.dun.override=0 \
     ro.facelock.black_timeout=400 \
     ro.facelock.det_timeout=1500 \
     ro.facelock.rec_timeout=2500 \
     ro.facelock.lively_timeout=2500 \
     ro.facelock.est_max_time=600 \
     ro.facelock.use_intro_anim=false \
+    ro.ril.power_collapse=1 \
     ro.setupwizard.network_required=false \
     ro.setupwizard.gservices_delay=-1 \
-    net.tethering.noprovisioning=true \
+    ro.sys.fw.bg_apps_limit=20 \
     ro.substratum.verified=true \
-    persist.sys.dun.override=0 \
-    ro.ril.power_collapse=1 \
-    ro.adb.secure=0
+    net.tethering.noprovisioning=true \
+    ro.adb.secure=1
 
 # Google assistant
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -63,8 +63,7 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk config
 PRODUCT_COPY_FILES += \
-    vendor/nougat/prebuilt/etc/init.nougat.rc:root/init.nougat.rc \
-    vendor/nougat/prebuilt/etc/init.special.sh:root/init.special.sh
+    vendor/nougat/prebuilt/etc/init.nougat.rc:root/init.nougat.rc
 
 # SuperSU
 PRODUCT_COPY_FILES += \
