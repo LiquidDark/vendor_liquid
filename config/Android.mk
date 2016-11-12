@@ -23,4 +23,4 @@
 LOCAL_PATH := $(call my-dir)
 
 # Include common configuration
-include vendor/nougat/config/nougat.mk
+include vendor/liquid/config/nougat.mk
