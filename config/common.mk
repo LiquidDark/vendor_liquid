@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += \
 
 # Boot animation
 PRODUCT_COPY_FILES += \
-    vendor/nougat/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/liquid/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
 
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
