@@ -112,7 +112,7 @@ ADDITIONAL_BUILD_PROPERTIES += \
 endif
 
 # UBER Clang version
-UBC_VERSION := uber-3.8
+UBC_VERSION := 3.8.275480
 
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.uber.clang=$(UBC_VERSION)
