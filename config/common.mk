@@ -53,7 +53,7 @@ vendor/liquid/prebuilt/etc/projekt.substratum.apk:system/app/Substratum/Substrat
 
 # Kernel Auditor
 PRODUCT_COPY_FILES += \
-vendor/liquid/prebuilt/common/etc/Kerneladiutor.apk:system/app/Auditor/Kerneladiutor.apk    
+vendor/liquid/prebuilt/etc/Kerneladiutor.apk:system/app/Auditor/Kerneladiutor.apk    
 
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
