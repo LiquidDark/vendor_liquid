@@ -46,6 +46,14 @@ PRODUCT_COPY_FILES += \
 # Boot animation
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
+    
+# Substratum Theme Engine    
+PRODUCT_COPY_FILES += \
+vendor/liquid/prebuilt/etc/projekt.substratum.apk:system/app/Substratum/Substratum.apk
+
+# Kernel Auditor
+PRODUCT_COPY_FILES += \
+vendor/liquid/prebuilt/common/etc/Kerneladiutor.apk:system/app/Auditor/Kerneladiutor.apk    
 
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
