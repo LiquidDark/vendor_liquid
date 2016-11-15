@@ -30,8 +30,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=1
 
 # Google assistant
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opa.eligible_device=true
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.opa.eligible_device=true
 
 # APN config
 PRODUCT_COPY_FILES += \
