@@ -84,8 +84,8 @@ PRODUCT_COPY_FILES += \
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
-    vendor/nougat/prebuilt/etc/v4a.zip:system/addon.d/v4a.zip \
-    vendor/nougat/prebuilt/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh
+    vendor/liquid/prebuilt/etc/v4a.zip:system/addon.d/v4a.zip \
+    vendor/liquid/prebuilt/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh
 
 # Include packages
 PRODUCT_PACKAGES += \
