@@ -8,7 +8,7 @@ TARGET_DEVICE := angler
 export TARGET_DEVICE
 
 ROM_DATE := $(shell date -u +%Y%m%d)-$(shell date -u +%H%M)
-ROM_VERSION := $(ROM_NAME)-$(ROM_DATE)-$(PRODUCT_DEVICE)
+ROM_VERSION := $(ROM_NAME)-$(ROM_DATE)-$(PRODUCT_NAME)
 export ROM_VERSION
 
 PRODUCT_PROPERTY_OVERRIDES += \
