@@ -53,7 +53,7 @@ vendor/liquid/prebuilt/etc/projekt.substratum.apk:system/app/Substratum/Substrat
 
 # Kernel Auditor
 PRODUCT_COPY_FILES += \
-vendor/liquid/prebuilt/etc/Kerneladiutor.apk:system/app/Auditor/Kerneladiutor.apk    
+vendor/liquid/prebuilt/etc/KernelAdiutor.apk:system/app/Auditor/KernelAdiutor.apk    
 
 # Enable SIP+VoIP
 PRODUCT_COPY_FILES += \
@@ -85,7 +85,8 @@ PRODUCT_COPY_FILES += \
 # Viper4Android
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/etc/v4a.zip:system/addon.d/v4a.zip \
-    vendor/liquid/prebuilt/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh
+    vendor/liquid/prebuilt/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh \
+    vendor/liquid/prebuilt/etc/Viper4Android.apk:system/app/Viper4Android/Viper4Android.apk
 
 # Include packages
 PRODUCT_PACKAGES += \
