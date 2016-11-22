@@ -59,11 +59,11 @@ PRODUCT_COPY_FILES += \
 
 # SuperSU
 PRODUCT_COPY_FILES += \
-    vendor/nougat/prebuilt/addon.d/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip
+    vendor/nougat/prebuilt/addon.d/supersu.zip:system/addon.d/supersu.zip
 
-# Viper4Android
+# ViPER
 PRODUCT_COPY_FILES += \
-    vendor/nougat/prebuilt/etc/v4a.zip:system/addon.d/v4a.zip
+    vendor/nougat/prebuilt/addon.d/viper.zip:system/addon.d/viper.zip
 
 # Include packages
 PRODUCT_PACKAGES += \
