@@ -5,6 +5,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.com.android.dateformat=MM-dd-yyyy \
+    ro.setupwizard.rotation_locked=true \
     ro.setupwizard.enterprise_mode=1
 
 # UBER property overides
@@ -76,6 +77,10 @@ PRODUCT_PACKAGES += \
 
 # Exclude SystemUI tests
 EXCLUDE_SYSTEMUI_TESTS := true
+
+# Include explicitly to work around Facelock issues
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full
 
 # Include overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/nougat/overlay/common
