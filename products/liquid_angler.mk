@@ -2,14 +2,14 @@
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
 # Inherit some common stuff
-$(call inherit-product, vendor/nougat/config/common.mk)
+$(call inherit-product, vendor/liquid/config/common.mk)
 
 # Inherit some phone stuff
-$(call inherit-product, vendor/nougat/config/common_full_phone.mk)
+$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
 # Override build properties
 
-PRODUCT_NAME := nougat_angler
+PRODUCT_NAME := liquid_angler
 PRODUCT_BRAND := Google
 PRODUCT_DEVICE := angler
 PRODUCT_MODEL := Nexus 6P

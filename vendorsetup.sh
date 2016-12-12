@@ -1,1 +1,3 @@
-add_lunch_combo nougat_angler-user
+add_lunch_combo liquid_angler-user
+add_lunch_combo liquid_bullhead-user
+add_lunch_combo liquid_hammerhead-user

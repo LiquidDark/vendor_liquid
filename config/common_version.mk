@@ -2,10 +2,10 @@
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=NMF26O BUILD_ID=NMF26O BUILD_VERSION_TAGS=release-keys BUILD_UTC_DATE=0
 
 # Target Device
-TARGET_DEVICE := angler
+TARGET_DEVICE := liquid
 export TARGET_DEVICE
 
-ROM_NAME := liquid_nougat
+ROM_NAME := liquid_dark
 export ROM_NAME
 
 ROM_DATE := $(shell date -u +%Y%m%d)-$(shell date -u +%H%M)
