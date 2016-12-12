@@ -65,6 +65,14 @@ PRODUCT_COPY_FILES += \
 # ViPER
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/addon.d/viper.zip:system/addon.d/viper.zip
+    
+# Substratum Theme Engine    
+PRODUCT_COPY_FILES += \
+vendor/liquid/prebuilt/etc/projekt.substratum.apk:system/app/Substratum/Substratum.apk
+
+# Kernel Auditor
+PRODUCT_COPY_FILES += \
+vendor/liquid/prebuilt/etc/KernelAdiutor.apk:system/app/Auditor/KernelAdiutor.apk     
 
 # Include packages
 PRODUCT_PACKAGES += \
