@@ -85,7 +85,7 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     masquerade \
     QuickSearchBox \
-    WebViewGoogle
+    GoogleWebView
 
 # Exclude SystemUI tests
 EXCLUDE_SYSTEMUI_TESTS := true
