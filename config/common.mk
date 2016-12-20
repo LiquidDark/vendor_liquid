@@ -84,7 +84,8 @@ PRODUCT_PACKAGES += \
     Camera2 \
     Launcher3 \
     masquerade \
-    QuickSearchBox
+    QuickSearchBox \
+    WebViewGoogle
 
 # Exclude SystemUI tests
 EXCLUDE_SYSTEMUI_TESTS := true
