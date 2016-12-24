@@ -8,27 +8,27 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.rotation_locked=true \
     ro.setupwizard.enterprise_mode=1
 
-# UBER property overides
+# Liquid property overides
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.performance.tuning=1 \
+    ro.sys.fw.bg_apps_limit=20 \
     wifi.supplicant_scan_interval=180 \
     windowsmgr.max_events_per_sec=150 \
+    debug.performance.tuning=1 \
+    ro.ril.power_collapse=1 \
     persist.service.lgospd.enable=0 \
     persist.service.pcsync.enable=0 \
-    persist.sys.dun.override=0 \
     ro.facelock.black_timeout=400 \
     ro.facelock.det_timeout=1500 \
     ro.facelock.rec_timeout=2500 \
     ro.facelock.lively_timeout=2500 \
     ro.facelock.est_max_time=600 \
     ro.facelock.use_intro_anim=false \
-    ro.ril.power_collapse=1 \
     ro.setupwizard.network_required=false \
     ro.setupwizard.gservices_delay=-1 \
-    ro.sys.fw.bg_apps_limit=20 \
-    ro.substratum.verified=true \
     net.tethering.noprovisioning=true \
-    ro.adb.secure=1
+    persist.sys.dun.override=0 \
+    ro.adb.secure=1 \
+    ro.substratum.verified=true
 
 # Google assistant
 PRODUCT_PROPERTY_OVERRIDES += \
