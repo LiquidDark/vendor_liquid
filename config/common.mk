@@ -142,8 +142,6 @@ PRODUCT_PACKAGES += \
     LiveLockScreenService \
     LockClock \
     NovaLauncher \
-    Screencast \
-    SoundRecorder \
     WallpaperPicker \
     WeatherProvider
 
