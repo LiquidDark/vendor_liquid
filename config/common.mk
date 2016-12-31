@@ -105,4 +105,3 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/liquid/overlay/common
 
 # Inherit build prop overrides
 -include vendor/liquid/config/common_version.mk
-
