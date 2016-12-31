@@ -62,7 +62,8 @@ PRODUCT_COPY_FILES += \
 ifneq ($(filter liquid_hammerhead liquid_shamu,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES +=  \
     vendor/liquid/prebuilt/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
-    vendor/liquid/prebuilt/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd    
+    vendor/liquid/prebuilt/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+endif    
 
 # SuperSU
 PRODUCT_COPY_FILES += \
@@ -82,12 +83,9 @@ vendor/liquid/prebuilt/etc/KernelAdiutor.apk:system/app/Auditor/KernelAdiutor.ap
 
 # Include packages
 PRODUCT_PACKAGES += \
-    AOSPLinks \
     Busybox \
     Gallery2 \
     Calculator \
-    Calendar \
-    Camera2 \
     Launcher3 \
     masquerade \
     QuickSearchBox \
