@@ -57,6 +57,12 @@ PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so \
     vendor/liquid/prebuilt/lib64/libjni_keyboarddecoder.so:system/lib64/libjni_keyboarddecoder \
     vendor/liquid/prebuilt/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so
+    
+# Camera Effects
+ifneq ($(filter liquid_hammerhead liquid_shamu,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES +=  \
+    vendor/liquid/prebuilt/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/liquid/prebuilt/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd    
 
 # SuperSU
 PRODUCT_COPY_FILES += \
