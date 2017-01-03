@@ -59,7 +59,7 @@ repositories = []
 
 page = 1
 while not depsonly:
-    result = json.loads(urllib.request.urlopen("https://api.github.com/users/LiquidDark/repos?page=%d" % page).read().decode())
+    result = json.loads(urllib.request.urlopen("https://api.github.com/users/LiquidDark-Devices/repos?page=%d" % page).read().decode())
     if len(result) == 0:
         break
     for res in result:
