@@ -21,7 +21,7 @@ if [ -z "$Liquid" ]; then
         : ${OTA_TYPE:=}
         DEVICE=`sed -n -e'/ro\.ota\.device/s/^.*=//p' $OUT/system/build.prop`
         : ${DEVICE:=}
-	LIWQUID_TARGET_PACKAGE=$MODVERSION-$DEVICE.zip
+	LIQUID_TARGET_PACKAGE=$MODVERSION-$DEVICE.zip
 	OUTFILE=$OUT/$LIQUID_TARGET_PACKAGE
 else
 	LIQUID_TARGET_PACKAGE=liquid-squished.zip
