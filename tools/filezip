@@ -14,13 +14,13 @@ else
 fi
 
 # Determine what to name the new signed package
-if [ -z "$Liquid" ]; then
+if [ -z "$LIQUID" ]; then
 	MODVERSION=`sed -n -e'/ro\.liquid.version/s/^.*=//p' $OUT/system/build.prop`
 	: ${MODVERSION:=}
-        DEVICE_TYPE=`sed -n -e'/ro\.ota\.type/s/^.*=//p' $OUT/system/build.prop`
+        OTA_TYPE=`sed -n -e'/ro\.ota\.type/s/^.*=//p' $OUT/system/build.prop`
         : ${OTA_TYPE:=}
-        OTA_FILENAME=`sed -n -e'/ro\.ota\.version/s/^.*=//p' $OUT/system/build.prop`
-        : ${OTA_FILENAME:=}
+        DEVICE=`sed -n -e'/ro\.ota\.device/s/^.*=//p' $OUT/system/build.prop`
+        : ${DEVICE:=}
 	LIQUID_TARGET_PACKAGE=$MODVERSION-$DEVICE.zip
 	OUTFILE=$OUT/$LIQUID_TARGET_PACKAGE
 else
