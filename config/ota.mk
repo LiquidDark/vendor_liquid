@@ -4,7 +4,7 @@ OTA_TYPE=Unofficial
 endif
 
 # Liquid version
-LIQUID_VERSION := LiquidDark-$(shell date +"%Y%m%d-%H%M")
+LIQUID_VERSION := $(TARGET_PRODUCT)-$(shell date +"%Y%m%d-%H%M")
 DEVICE := $(subst liquid_,,$(TARGET_PRODUCT))
 
 # Build.prop overrides
