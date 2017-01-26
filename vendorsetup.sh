@@ -7,4 +7,5 @@ add_lunch_combo liquid_kenzo-userdebug
 add_lunch_combo liquid_m7-userdebug
 add_lunch_combo liquid_m8-userdebug
 add_lunch_combo liquid_mako-userdebug
+add_lunch_combo liquid_shamu-userdebug
 
