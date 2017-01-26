@@ -23,6 +23,7 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true
+    ro.opa.eligible_device=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
