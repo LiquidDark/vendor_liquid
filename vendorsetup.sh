@@ -1,4 +1,6 @@
 add_lunch_combo liquid_angler-userdebug
+add_lunch_combo liquid_athene-userdebug
+add_lunch_combo liquid_athene_f-userdebug
 add_lunch_combo liquid_bullhead-userdebug
 add_lunch_combo liquid_endeavoru-userdebug
 add_lunch_combo liquid_flo-userdebug
@@ -9,4 +11,3 @@ add_lunch_combo liquid_m7-userdebug
 add_lunch_combo liquid_m8-userdebug
 add_lunch_combo liquid_mako-userdebug
 add_lunch_combo liquid_shamu-userdebug
-
