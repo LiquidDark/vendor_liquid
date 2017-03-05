@@ -133,7 +133,7 @@ PRODUCT_PACKAGES += \
 # Custom Liquid packages
 PRODUCT_PACKAGES += \
     Adaway \
-    Amaze \
+    MiXplorer \
     AudioFX \
     CMSettingsProvider \
     Eleven \
@@ -151,7 +151,7 @@ PRODUCT_PACKAGES += \
     SuperSU
 endif
 
-# Extra tools in XenonHD
+# Extra tools in Liquid
 PRODUCT_PACKAGES += \
     7z \
     bash \
