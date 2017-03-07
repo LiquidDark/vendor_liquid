@@ -119,7 +119,7 @@ include $(CONFIG)/themes_common.mk
 # OMS7 substratum & masquerade
 PRODUCT_PACKAGES += \
    substratum \
-   masquerade
+   ThemeInterfacer
 
 ifneq ($(TARGET_DISABLE_CMSDK), true)
 # CMSDK
