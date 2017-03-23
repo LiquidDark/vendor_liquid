@@ -93,7 +93,13 @@ PRODUCT_COPY_FILES += \
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
-    $(PREBUILT)/lib/content-types.properties:system/lib/content-types.properties
+    $(CONFIG)/permissions/backup.xml:system/etc/sysconfig/backup.xml \
+    $(CONFIG)/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml \
+    $(CONFIG)/permissions/power-whitelist.xml:system/etc/sysconfig/power-whitelist.xml \
+    $(PREBUILT)/bin/otasigcheck.sh:install/bin/otasigcheck.sh \
+    $(PREBUILT)/etc/init.local.rc:root/init.xenonhd.rc \
+    $(PREBUILT)/lib/content-types.properties:system/lib/content-types.properties \
+    $(PREBUILT)/media/bootanimation.zip:system/media/bootanimation.zip
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
