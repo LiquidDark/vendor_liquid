@@ -110,6 +110,9 @@ PRODUCT_COPY_FILES += \
 # Include OTA config
 include $(CONFIG)/ota.mk
 
+# Include nougat config
+include $(CONFIG)/nougat.mk
+
 # Include Liquid audio files
 include $(CONFIG)/liquid_audio.mk
 
