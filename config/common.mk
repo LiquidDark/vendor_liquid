@@ -161,7 +161,8 @@ PRODUCT_PACKAGES += \
     MiXplorer \
     AudioFX \
     CMSettingsProvider \
-    Eleven \
+    OmniClockOSS \
+    Phonograph \
     ExactCalculator \
     KernelAdiutor \
     LiveLockScreenService \
