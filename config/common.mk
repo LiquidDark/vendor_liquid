@@ -154,24 +154,38 @@ PRODUCT_PACKAGES += \
 
 # Custom Liquid packages
 PRODUCT_PACKAGES += \
-    Adaway \
     MiXplorer \
     AudioFX \
     CMSettingsProvider \
     OmniClockOSS \
     Phonograph \
     ExactCalculator \
-    KernelAdiutor \
     LiveLockScreenService \
     LockClock \
     NovaLauncher \
     WallpaperPicker \
     WeatherProvider
 
-# Optional SuperSU apk
-ifeq ($(WITH_SUPERSU),true)
+# These packages are excluded from user builds
+ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
-    SuperSU
+    procmem \
+    procrank
+
+ifeq ($(ROOT_METHOD),su)
+PRODUCT_PACKAGES += \
+    su \
+    Adaway \
+    KernelAdiutor
+endif
+
+ifeq ($(ROOT_METHOD),magisk)
+PRODUCT_PACKAGES += \
+    Adaway \
+    KernelAdiutor \
+    Magisk \
+    MagiskManager
+endif
 endif
 
 # Extra tools in Liquid
@@ -254,14 +268,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# These packages are excluded from user builds
-ifneq ($(TARGET_BUILD_VARIANT),user)
-PRODUCT_PACKAGES += \
-    procmem \
-    procrank \
-    su
-endif
 
 DEVICE_PACKAGE_OVERLAYS += $(OVERLAY)/common
 
