@@ -129,7 +129,11 @@ endif
 # Viper4Android
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/addon.d/viper.zip:system/addon.d/viper.zip
-
+    
+# Magisk
+PRODUCT_COPY_FILES += \
+    vendor/liquid/prebuilt/addon.d/Magisk.zip:system/addon.d/Magisk.zip
+        
 # Include packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
