@@ -154,8 +154,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libemoji \
     LiveWallpapersPicker \
-    PhotoTable \
-    Terminal
+    PhotoTable
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
@@ -164,7 +163,6 @@ PRODUCT_PACKAGES += \
 
 # Custom Liquid packages
 PRODUCT_PACKAGES += \
-    MiXplorer \
     AudioFX \
     CMSettingsProvider \
     OmniClockOSS \
