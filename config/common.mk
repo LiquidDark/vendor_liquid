@@ -172,7 +172,9 @@ PRODUCT_PACKAGES += \
     LockClock \
     NovaLauncher \
     WallpaperPicker \
-    WeatherProvider
+    WeatherProvider \
+    Adaway \
+    KernelAdiutor
 
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
