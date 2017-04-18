@@ -165,7 +165,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
-    OmniClockOSS \
     Phonograph \
     ExactCalculator \
     LiveLockScreenService \
