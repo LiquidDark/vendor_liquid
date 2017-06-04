@@ -139,6 +139,10 @@ PRODUCT_COPY_FILES += \
 # Magisk
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/addon.d/Magisk.zip:system/addon.d/Magisk.zip
+    
+# Gallery2
+PRODUCT_COPY_FILES += \
+    vendor/liquid/prebuilt/apps/Gallery2.apk:system/app/Gallery2/Gallery2.apk    
         
 # Include packages
 PRODUCT_PACKAGES += \
