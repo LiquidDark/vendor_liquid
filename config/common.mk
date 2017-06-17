@@ -176,7 +176,7 @@ PRODUCT_PACKAGES += \
     NovaLauncher \
     WallpaperPicker \
     WeatherProvider \
-    Adaway \
+    AdAway \
     KernelAdiutor
 
 # These packages are excluded from user builds
