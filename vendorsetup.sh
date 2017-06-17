@@ -1,5 +1,6 @@
 add_lunch_combo liquid_angler-userdebug
 add_lunch_combo liquid_athene-userdebug
+add_lunch_combo liquid_bacon-userdebug
 add_lunch_combo liquid_bullhead-userdebug
 add_lunch_combo liquid_endeavoru-userdebug
 add_lunch_combo liquid_flo-userdebug
