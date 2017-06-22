@@ -140,9 +140,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/addon.d/Magisk.zip:system/addon.d/Magisk.zip
     
+# MagiskManager
+PRODUCT_COPY_FILES += \
+    vendor/liquid/prebuilt/apps/MagiskManager.apk:system/app/MagiskManager/MagiskManager.apk
+    
 # Gallery2
 PRODUCT_COPY_FILES += \
-    vendor/liquid/prebuilt/apps/Gallery2.apk:system/app/Gallery2/Gallery2.apk    
+    vendor/liquid/prebuilt/apps/Gallery2.apk:system/app/Gallery2/Gallery2.apk     
         
 # Include packages
 PRODUCT_PACKAGES += \
@@ -195,9 +199,7 @@ endif
 ifeq ($(ROOT_METHOD),magisk)
 PRODUCT_PACKAGES += \
     Adaway \
-    KernelAdiutor \
-    Magisk \
-    MagiskManager
+    KernelAdiutor
 endif
 endif
 
