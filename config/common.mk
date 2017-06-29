@@ -153,7 +153,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     CMAudioService \
     CMParts \
-    CustomTiles \
+    CMSettingsProvider \
     Development \
     Profiles \
     WeatherManagerService
