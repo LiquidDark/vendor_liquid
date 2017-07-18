@@ -147,7 +147,12 @@ PRODUCT_COPY_FILES += \
 # Gallery2
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/apps/Gallery2.apk:system/app/Gallery2/Gallery2.apk     
-        
+
+# TWRP
+ifeq ($(WITH_TWRP),true)
+include vendor/liquid/config/twrp.mk
+endif
+
 # Include packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
